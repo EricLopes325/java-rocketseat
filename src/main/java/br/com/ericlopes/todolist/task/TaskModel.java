@@ -19,7 +19,7 @@ import lombok.Data;
      * Data de início 
      * Data de término
      * Prioridade
-     */
+*/
 @Data
 @Entity(name = "tb_tasks")
 public class TaskModel {
@@ -31,8 +31,8 @@ public class TaskModel {
 
     @Column(length = 50)
     private String title;
-    private LocalDateTime start;
-    private LocalDateTime ennAt;
+    private LocalDateTime startAt;
+    private LocalDateTime endAt;
     private String priority;
 
     private UUID idUser;
